@@ -1,0 +1,11 @@
+def firstdigit(n):
+    while(n>=10):
+        n=n/10
+    return int(n)
+def lastdigit(n):
+    return(n%10)
+n=int(input())
+print(firstdigit(n),end=" ")
+print(lastdigit(n))
+c=firstdigit(n)+lastdigit(n)
+print(c)
